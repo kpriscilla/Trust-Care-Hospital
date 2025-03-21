@@ -1,110 +1,210 @@
-<html> 
+<!DOCTYPE html>
+<html>
 <head>
-<title> Hospital homepage </title>
-<link ref ="stylesheet"
-href="style.css"> <!-- external CSS--> 
-</head> <body>
-<!-- HEADER--> 
-<header> 
-<h1> Welcome to Trust Care Hospital</h1> 
-<h4> where compassionate care and advanced medical technology come together to provide you with the best possible healthcare experience. Our dedicated team of skilled doctors, nurses, and healthcare proffesionals is committed to ensuring your health and well being are our top priorities. Whether seeking routine care, specialized treatments, our emergency services, we offer comprehensive services tailored to meet your needs. Explore our website to learn more about our services, facilities, patient resources, and how we can support you on journey to better health. Your care, our commitment.</h4>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <title>Trust Care Hospital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+        }
+        header {
+            background-color: #005eb8;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .welcome-text {
+            max-width: 800px;
+            margin: 1rem auto;
+            padding: 0 1rem;
+        }
+        .services-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .service-category {
+            margin-bottom: 2rem;
+            background-color: #f5f5f5;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .service-category h2 {
+            color: #005eb8;
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #005eb8;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .contact-section {
+            background-color: #003875;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Trust Care Hospital</h1>
+        <div class="welcome-text">
+            <h4>Where compassionate care and advanced medical technology come together to provide you with the best possible healthcare experience. Our dedicated team of skilled doctors, nurses, and healthcare professionals is committed to ensuring your health and well-being are our top priorities.</h4>
+        </div>
+    </header>
+
+    <div class="services-container">
+        <div class="service-category">
+            <h2>Emergency Services</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price (USD)</th>
+                </tr>
+                <tr>
+                    <td>Emergency Room Visit (Basic)</td>
+                    <td>$150 - $300</td>
+                </tr>
+                <tr>
+                    <td>Urgent Care Consultation</td>
+                    <td>$75 - $150</td>
+                </tr>
+                <tr>
+                    <td>Ambulance Service</td>
+                    <td>$400 - $1,200</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="service-category">
+            <h2>Outpatient Services</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price (USD)</th>
+                </tr>
+                <tr>
+                    <td>General Consultation</td>
+                    <td>$100 - $200</td>
+                </tr>
+                <tr>
+                    <td>Specialist Consultation</td>
+                    <td>$150 - $300</td>
+                </tr>
+                <tr>
+                    <td>Physical Therapy (per session)</td>
+                    <td>$75 - $150</td>
+                </tr>
+                <tr>
+                    <td>Diagnostic Tests</td>
+                    <td>$50 - $500</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="service-category">
+            <h2>Diagnostic Services</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price (USD)</th>
+                </tr>
+                <tr>
+                    <td>X-Ray</td>
+                    <td>$100 - $250</td>
+                </tr>
+                <tr>
+                    <td>MRI Scan</td>
+                    <td>$500 - $2,500</td>
+                </tr>
+                <tr>
+                    <td>CT Scan</td>
+                    <td>$400 - $2,000</td>
+                </tr>
+                <tr>
+                    <td>Ultrasound</td>
+                    <td>$200 - $500</td>
+                </tr>
+                <tr>
+                    <td>Blood Tests</td>
+                    <td>$50 - $1,000</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="service-category">
+            <h2>Surgical Procedures</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price (USD)</th>
+                </tr>
+                <tr>
+                    <td>Minor Surgery</td>
+                    <td>$2,000 - $5,000</td>
+                </tr>
+                <tr>
+                    <td>Major Surgery</td>
+                    <td>$10,000 - $30,000</td>
+                </tr>
+                <tr>
+                    <td>Laparoscopic Surgery</td>
+                    <td>$5,000 - $15,000</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="service-category">
+            <h2>Specialized Care</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price (USD)</th>
+                </tr>
+                <tr>
+                    <td>Cardiology Consultation</td>
+                    <td>$200 - $400</td>
+                </tr>
+                <tr>
+                    <td>Orthopedic Consultation</td>
+                    <td>$200 - $400</td>
+                </tr>
+                <tr>
+                    <td>Neurology Consultation</td>
+                    <td>$250 - $450</td>
+                </tr>
+                <tr>
+                    <td>Pediatric Care</td>
+                    <td>$150 - $300</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Emergency: 911</p>
+        <p>Appointment Booking: (555) 123-4567</p>
+        <p>Email: info@trustcarehospital.com</p>
+        <p>Location: 1234 Healthcare Avenue, Medical District, City, State 12345</p>
+    </div>
+</body>
 </html>
